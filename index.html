@@ -80,7 +80,7 @@
                 </div>
                 <div class="info-text">
                     <p>Nowa Zelandia to państwo wyspiarskie na południowo-zachodnim Pacyfiku, składające się z dwóch głównych wysp (Północnej i Południowej) oraz szeregu mniejszych wysp.</p>
-                    <button type="button" class="map-button">MAPA</button>
+                    <button type="button" data-modal-open class="map-button">MAPA</button>
                 </div>
             </div>
         </section>
@@ -120,10 +120,18 @@
                 </svg>
             </a>
         </div>
-        <!-- /mapa/ -->
-                <div>
-                    <img src="./images/nz-map.jpg" alt="Map of New Zealand" width="852" height="935">
-                </div>
     </footer>
+
+        <div class="modal-container is-hidden" data-modal>
+            <div class="modal-box">
+                <button type="button" data-modal-close class="modal-button">
+                    <svg width="10" height="10" class="svg-button">
+                        <use href="./images/icons.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    <script src="./modal.js"></script>
 </body>
 </html>
