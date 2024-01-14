@@ -1,13 +1,39 @@
 :root {
     --logo-new-color: #0E4EBC;
     --logo-zealad-color: #FF2424;
-    --background-color: #d3513a8e;
+    --background-color: #000000;
     --title-color: #F8F5ED;
+    --shadow-color: #756f6f;
 }
 
 body {
     font-family: "Playfair Display", serif;
-    color: var(--title-color)
+    color: var(--title-color);
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .link {
@@ -24,7 +50,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
+    margin: 20px auto;
 }
 
 .logo {
@@ -43,7 +69,7 @@ body {
     margin-left: 5px;
 }
 
-.islands {
+.islands-header {
     display: flex;
     gap: 50px;
 }
@@ -64,7 +90,7 @@ body {
 }
 
 .title-background {
-    padding: 60px 0;
+    padding: 110px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/NZ_Background.JPG);
     width: 100%;
     background-repeat: no-repeat;
@@ -72,16 +98,55 @@ body {
     background-size: cover;
 }
 
-.main-background {
-    background-color: var(--background-color);
+.info {
+    margin: 30px 0;
+}
+
+.info-box-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    font-family: "Lemon", serif;
+    font-size: 13px;
+    line-height: 2;
+    border: 3px solid var(--title-color);
+    padding: 35px;
+}
+
+.info-text {
+    font-family: "Lemon", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: italic;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.map-button {
+    border: none;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
 }
 
 .titletwo {
     font-style: italic;
 }
 
-/* ---footer--- */
+.islands-main {
+    padding-bottom: 30px;
+}
 
+/* ---footer--- */
 .container-footer {
-    background-color: var(--background-color);
+    margin: 20px auto;
 }
