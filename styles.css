@@ -1,0 +1,87 @@
+:root {
+    --logo-new-color: #0E4EBC;
+    --logo-zealad-color: #FF2424;
+    --background-color: #d3513a8e;
+    --title-color: #F8F5ED;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: var(--title-color)
+}
+
+.link {
+    text-decoration: none;
+    color: var(--title-color);
+    font-family: "Lemon", serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--logo-new-color);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.logo-span {
+    color: var(--logo-zealad-color);
+}
+
+.svg-flag-logo {
+    margin-left: 5px;
+}
+
+.islands {
+    display: flex;
+    gap: 50px;
+}
+
+.flags {
+    display: flex;
+    gap: 20px;
+}
+
+/* ---main--- */
+
+.title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 76px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+
+.title-background {
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/NZ_Background.JPG);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-background {
+    background-color: var(--background-color);
+}
+
+.titletwo {
+    font-style: italic;
+}
+
+/* ---footer--- */
+
+.container-footer {
+    background-color: var(--background-color);
+}
