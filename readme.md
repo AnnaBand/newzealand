@@ -1,1 +1,1 @@
-https://krollew23.github.io/newzealand/
+https://AnnaBand.github.io/newzealand/
